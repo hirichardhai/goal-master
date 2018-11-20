@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Login from './Login';
+import Todo from './Todo';
 
 class App extends Component {
   constructor(props) {
@@ -16,6 +17,7 @@ class App extends Component {
         <div>
           App Component
         </div>
+        <Todo />
       </div>
     )
   }
