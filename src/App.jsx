@@ -15,7 +15,7 @@ class App extends Component {
       <div>
         <Login />
         <div>
-          App Component
+          App 
         </div>
         <Todo />
       </div>
