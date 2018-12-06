@@ -9,7 +9,7 @@ class Todo extends Component {
 
   render() {
     return (
-      <div>Todo Component</div>
+      <div>To-Do Component</div>
     )
   }
 }
