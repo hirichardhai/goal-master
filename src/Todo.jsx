@@ -8,6 +8,16 @@ class Todo extends Component {
     }
   }
 
+  renderTasks() {
+    return (
+      <ul>
+        {this.state.tasks.map(task => {
+          <li>{task}</li>
+        })}
+      </ul>
+    )
+  }
+
   render() {
     return (
       <div>
