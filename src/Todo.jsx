@@ -11,14 +11,16 @@ class Todo extends Component {
   render() {
     return (
       <div>
-        <input>
+        <input type='text'>
         
         </input>
         <button>
         
         </button>
         <div className='todoTasks'></div>
-        <div className='todoTasks'></div>
+        <div className='todoTasks'>
+          {this.renderTasks()}
+        </div>
         To-Do Component</div>
     )
   }
