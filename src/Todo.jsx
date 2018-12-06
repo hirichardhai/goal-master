@@ -18,13 +18,17 @@ class Todo extends Component {
     )
   }
 
+  addTask() {
+    
+  }
+
   render() {
     return (
       <div>
         <input type='text'>
         
         </input>
-        <button>
+        <button onClick={() => {this.addTask()}}>
         
         </button>
         <div className='todoTasks'></div>
