@@ -4,7 +4,9 @@ class Todo extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      tasks: []
+      tasks: [],
+      totalTasks: 0,
+      tasksLeft: 0
     }
   }
 
@@ -19,7 +21,7 @@ class Todo extends Component {
   }
 
   addTask() {
-    
+
   }
 
   render() {
