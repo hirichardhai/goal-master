@@ -10,7 +10,15 @@ class Todo extends Component {
 
   render() {
     return (
-      <div>To-Do Component</div>
+      <div>
+        <input>
+        
+        </input>
+        <button>
+        
+        </button>
+        <div className='todoTasks'></div>
+        To-Do Component</div>
     )
   }
 }
