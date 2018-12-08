@@ -31,7 +31,6 @@ class Todo extends Component {
           onChange={event => this.setState({ task: event.target.value })}
           className='todo-textbox'
         >
-        
         </input>
         <button 
           type='button'
