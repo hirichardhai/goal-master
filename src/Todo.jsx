@@ -34,7 +34,11 @@ class Todo extends Component {
     // clear textbox
     let htmlTag = document.querySelector('input');
     htmlTag.value = '';
-    console.log(htmlTag);
+
+    // increment totalTasks/ tasksLeft by one
+    let totalTasksNumber = ++this.state.totalTasks;
+    let tasksToCompleteNumber = ++this.state.tasksLeft;
+    this.setState({ totalTasks: totalTasksNumber, tasksLeft: tasksToCompleteNumber })
   }
 
   render() {
