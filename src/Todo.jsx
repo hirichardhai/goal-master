@@ -4,6 +4,7 @@ class Todo extends Component {
   constructor(props) {
     super(props)
     this.state = {
+      task: '',
       tasks: [],
       totalTasks: 0,
       tasksLeft: 0
@@ -25,7 +26,9 @@ class Todo extends Component {
   render() {
     return (
       <div>
-        <input type='text'>
+        <input 
+          type='text'
+        >
         
         </input>
         <button 
