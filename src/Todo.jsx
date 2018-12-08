@@ -29,7 +29,7 @@ class Todo extends Component {
         <input 
           type='text'
           onChange={event => this.setState({ task: event.target.value })}
-
+          className='todo-textbox'
         >
         
         </input>
