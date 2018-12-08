@@ -17,7 +17,7 @@ class Todo extends Component {
         {
           this.state.tasks.map(task => {
             return (
-              <li>{task}</li>
+              <li className='task-li'>{task}</li>
             )
           })
         }
