@@ -39,6 +39,8 @@ class Todo extends Component {
     let totalTasksNumber = ++this.state.totalTasks;
     let tasksToCompleteNumber = ++this.state.tasksLeft;
     this.setState({ totalTasks: totalTasksNumber, tasksLeft: tasksToCompleteNumber })
+
+    // add strike through to each li
   }
 
   render() {
