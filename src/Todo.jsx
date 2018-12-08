@@ -5,7 +5,7 @@ class Todo extends Component {
     super(props)
     this.state = {
       task: '',
-      tasks: [],
+      tasks: ['todoTest'],
       totalTasks: 0,
       tasksLeft: 0
     }
@@ -14,7 +14,13 @@ class Todo extends Component {
   renderTasks() {
     return (
       <ul>
-        <li>test</li>
+        {
+          this.state.tasks.map(task => {
+            return (
+              <li>{task}</li>
+            )
+          })
+        }
       </ul>
     )
   }
