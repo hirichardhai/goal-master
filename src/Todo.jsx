@@ -13,9 +13,7 @@ class Todo extends Component {
   renderTasks() {
     return (
       <ul>
-        {this.state.tasks.map(task => {
-          <li>{task}</li>
-        })}
+        <li>test</li>
       </ul>
     )
   }
@@ -30,7 +28,11 @@ class Todo extends Component {
         <input type='text'>
         
         </input>
-        <button onClick={() => {this.addTask()}}>
+        <button 
+          type='button'
+          onClick={() => {this.addTask()}}
+          className='addTask-button'  
+        >
         
         </button>
         <div className='todoTasks'></div>
