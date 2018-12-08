@@ -5,7 +5,7 @@ class Todo extends Component {
     super(props)
     this.state = {
       task: '',
-      tasks: ['todoTest'],
+      tasks: [],
       totalTasks: 0,
       tasksLeft: 0
     }
@@ -48,7 +48,9 @@ class Todo extends Component {
         >
         Add Task
         </button>
-        <div className='todoTasks'></div>
+        <div className='todoTasks'>
+          You have {this.state.tasksLeft} out of {this.state.totalTasks} to finish!
+        </div>
         <div className='todoTasks'>
           {this.renderTasks()}
         </div>
