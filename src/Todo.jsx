@@ -33,7 +33,7 @@ class Todo extends Component {
 
     // clear textbox
     let htmlTag = document.querySelector('input');
-    let tag = document.getElementsByClassName('todo-textbox');
+    htmlTag.value = '';
     console.log(htmlTag);
   }
 
