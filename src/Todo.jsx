@@ -28,6 +28,8 @@ class Todo extends Component {
       <div>
         <input 
           type='text'
+          onChange={event => this.setState({ task: event.target.value })}
+
         >
         
         </input>
