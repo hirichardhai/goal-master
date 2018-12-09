@@ -19,7 +19,7 @@ class Todo extends Component {
             return (
               <li 
                 className='task-li'
-                onClick={}
+                onClick={() => this.strikeTask()}
               >
                 {task}
               </li>
@@ -31,7 +31,7 @@ class Todo extends Component {
   }
 
   strikeTask() {
-    
+    console.log('clicked task')
   }
 
   addTask() {
