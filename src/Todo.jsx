@@ -31,7 +31,8 @@ class Todo extends Component {
   }
 
   strikeTask() {
-    console.log('clicked task')
+    let removeTaskNumber = --this.state.tasksLeft;
+    this.setState({ tasksLeft: removeTaskNumber });
   }
 
   addTask() {
