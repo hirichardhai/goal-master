@@ -44,7 +44,6 @@ class Todo extends Component {
     let htmlTag = document.querySelector('input');
     htmlTag.value = '';
 
-    // increment totalTasks/ tasksLeft by one
     let totalTasksNumber = ++this.state.totalTasks;
     let tasksToCompleteNumber = ++this.state.tasksLeft;
     this.setState({ totalTasks: totalTasksNumber, tasksLeft: tasksToCompleteNumber })
