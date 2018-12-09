@@ -20,7 +20,7 @@ class Todo extends Component {
               <li 
                 className='task-li'
                 onClick={() => this.strikeTask()}
-                key={key}
+                key={}
               >
                 {task}
               </li>
@@ -37,17 +37,19 @@ class Todo extends Component {
   }
 
   addTask() {
+    // add task into total tasks
     let newTask = this.state.task;
     let updatedTodos = this.state.tasks.concat(newTask);
     this.setState({ tasks: updatedTodos })
 
+    // clear textbox
     let htmlTag = document.querySelector('input');
     htmlTag.value = '';
 
+    // increment totalTasks/ tasksLeft by one
     let totalTasksNumber = ++this.state.totalTasks;
     let tasksToCompleteNumber = ++this.state.tasksLeft;
     this.setState({ totalTasks: totalTasksNumber, tasksLeft: tasksToCompleteNumber })
-
   }
 
   render() {
