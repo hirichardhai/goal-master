@@ -41,7 +41,6 @@ class Todo extends Component {
     let updatedTodos = this.state.tasks.concat(newTask);
     this.setState({ tasks: updatedTodos })
 
-    // clear textbox
     let htmlTag = document.querySelector('input');
     htmlTag.value = '';
 
