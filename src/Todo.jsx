@@ -15,11 +15,12 @@ class Todo extends Component {
     return (
       <ul>
         {
-          this.state.tasks.map(task => {
+          this.state.tasks.map((task, key) => {
             return (
               <li 
                 className='task-li'
                 onClick={() => this.strikeTask()}
+                key={key}
               >
                 {task}
               </li>
