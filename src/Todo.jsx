@@ -17,12 +17,21 @@ class Todo extends Component {
         {
           this.state.tasks.map(task => {
             return (
-              <li className='task-li'>{task}</li>
+              <li 
+                className='task-li'
+                onClick={}
+              >
+                {task}
+              </li>
             )
           })
         }
       </ul>
     )
+  }
+
+  strikeTask() {
+    
   }
 
   addTask() {
@@ -40,7 +49,6 @@ class Todo extends Component {
     let tasksToCompleteNumber = ++this.state.tasksLeft;
     this.setState({ totalTasks: totalTasksNumber, tasksLeft: tasksToCompleteNumber })
 
-    // add strike through to each li working
   }
 
   render() {
