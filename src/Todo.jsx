@@ -37,7 +37,6 @@ class Todo extends Component {
   }
 
   addTask() {
-    // add task into total tasks
     let newTask = this.state.task;
     let updatedTodos = this.state.tasks.concat(newTask);
     this.setState({ tasks: updatedTodos })
