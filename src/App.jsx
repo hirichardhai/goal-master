@@ -15,7 +15,6 @@ class App extends Component {
       <div>
         <Login />
         <div>
-          App Component
         </div>
         <Todo />
       </div>
