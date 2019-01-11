@@ -69,15 +69,12 @@ class Todo extends Component {
         >
           Add Task
         </button>
-
         <div className='todoTasks'>
           You have {this.state.tasksLeft} out of {this.state.totalTasks} to finish!
         </div>
-
         <div className='todoTasks'>
           {this.renderTasks()}
         </div>
-
         To-Do Component
       </div>
     )
