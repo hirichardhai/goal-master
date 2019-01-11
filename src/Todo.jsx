@@ -38,15 +38,18 @@ class Todo extends Component {
 
   addTask() {
     // add task into totalTasks
+
     let newTask = this.state.task;
     let updatedTodos = this.state.tasks.concat(newTask);
     this.setState({ tasks: updatedTodos })
 
     // clear this.state.tasks rendered
+
     let htmlTag = document.querySelector('input');
     htmlTag.value = '';
 
     // increment totalTasks/ tasksLeft by one whenever user clicks addTasks
+    
     let totalTasksNumber = ++this.state.totalTasks;
     let tasksToCompleteNumber = ++this.state.tasksLeft;
     this.setState({ totalTasks: totalTasksNumber, tasksLeft: tasksToCompleteNumber })
