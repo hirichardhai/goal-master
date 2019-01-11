@@ -10,7 +10,7 @@ class Login extends Component {
 
   render() {
     return (
-      <div>Login Component</div>
+      <div>log-in component temp filler</div>
     )
   }
 }
